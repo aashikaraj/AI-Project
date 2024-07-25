@@ -13,17 +13,9 @@ def home():
 def about():
     return render_template('about.html', current_page=get_current_page())
 
-
 @app.route('/contact')
 def contact():
     return render_template('contact.html', current_page=get_current_page())
-
-
-@app.route('/gallery')
-def gallery():
-    return render_template('gallery.html', current_page=get_current_page())
-
-
 
 @app.route('/services')
 def services():

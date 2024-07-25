@@ -37,13 +37,7 @@
                 <a href="{{ url_for('about') }}" class="nav-item nav-link {% if current_page == 'about' %}active{% endif %}">About</a>
                 <a href="{{ url_for('services') }}" class="nav-item nav-link {% if current_page == 'services' %}active{% endif %}">Services</a>
                 <a href="{{ url_for('success') }}" class="nav-item nav-link {% if current_page == 'success' %}active{% endif %}">Success</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle {% if current_page == 'gallery' %}active{% endif %} {% if current_page == 'testimonial' %}active{% endif %}" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="{{ url_for('gallery') }}" class="dropdown-item {% if current_page == 'gallery' %}active{% endif %}">Our Gallery</a>
-                        <a href="{{ url_for('testimonial') }}" class="dropdown-item {% if current_page == 'testimonial' %}active{% endif %}">Testimonial</a>
-                    </div>
-                </div>
+                <a href="{{ url_for('testimonial') }}" class="nav-item nav-link {% if current_page == 'testimonial' %}active{% endif %}">Testimonial</a>
                 <a href="{{ url_for('contact') }}" class="nav-item nav-link {% if current_page == 'contact' %}active{% endif %}">Contact</a>
             </div>
         </div>
